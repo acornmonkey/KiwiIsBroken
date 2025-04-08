@@ -62,6 +62,9 @@
 				text-box: trim-both ex alphabetic;
 			}
 		</style>
+		<script>
+			const popover=document.querySelector("#compopover");
+		</script>
 		<title>Kiwi Browser is broken!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -107,6 +110,6 @@
 				<h4>button command and commandfor attributes<span class="label label-html">HTML</span></h4>
 					The button to toggle the popover does not work in Kiwi.
 					<div popover id="compopover">Popover</div>
-					<button command="toggle-popover" commandfor="compopover"></button>
+					<button command="toggle-popover" commandfor="compopover">Toggle popover</button>
 	</body>
 </html>
