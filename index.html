@@ -16,7 +16,7 @@
 				background-color: #3ac;
 			}
 			.label-html {
-				background-color: #ca3;
+				background-color: #c83;
 			}
 			div {
 				border-style: solid;
@@ -64,6 +64,8 @@
 		</style>
 		<script>
 			const popover=document.querySelector("#compopover");
+			const togBtn=document.querySelector("#togBtn");
+			togBtn.command="show-popover";
 		</script>
 		<title>Kiwi Browser is broken!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,6 +112,6 @@
 				<h4>button command and commandfor attributes<span class="label label-html">HTML</span></h4>
 					The button to toggle the popover does not work in Kiwi.
 					<div popover id="compopover">Popover</div>
-					<button command="toggle-popover" commandfor="compopover">Toggle popover</button>
+					<button id="togBtn" command="toggle-popover" commandfor="compopover">Toggle popover</button>
 	</body>
 </html>
