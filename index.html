@@ -15,6 +15,9 @@
 			.label-css {
 				background-color: #3ac;
 			}
+			.label-html {
+				background-color: #ac3;
+			}
 			div {
 				border-style: solid;
 				border-width: thin;
@@ -100,5 +103,10 @@
 			<h3>Chromium 133 (February 2025)</h3>
 				<h4>text-box trim<span class="label label-css">CSS</span></h4>
 					<div id="trim">This text should stick out of the div.</div>
+			<h3>Chromium 135 (April 2025)</h3>
+				<h4>button command and commandfor attributes<span class="label label-html">HTML</span></h4>
+					The button to toggle the popover does not work in Kiwi.
+					<div popover id="compopover">Popover</div>
+					<button command="toggle-popover" commandfor="compopover"></button>
 	</body>
 </html>
