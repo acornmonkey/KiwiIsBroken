@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color: #aef;
+				font-family: sans-serif;
+			}
+			.label {
+				color: white;
+				margin-left: 4px;
+				font-size: 0.7em;
+				border-radius: 4px;
+			}
+			.label-css {
+				background-color: #3ac;
+			}
+			div {
+				border-style: solid;
+				border-width: thin;
+				width: 300px;
+				span {
+					background-color: #d4f;
+				}
+			}
+			#transition:popover-open {
+				opacity: 1;
+			}
+			#transition {
+				opacity: 0;
+				transition: all 2s allow-discrete;
+			}
+			#relative {
+				background-color: rgb(from red r 255 b);
+			}
+			.geometry {
+				background-color: lime;
+				width: 90px;
+			}
+			#margin {
+				clip-path: circle(40%) margin-box;
+				margin: 20px;
+			}
+			#anchor {
+				anchor-name: --anc;
+			}
+			#anchored {
+				position: absolute;
+				position-anchor: --anc;
+				left: anchor(right);
+			}
+			#rl {
+				writing-mode: sideways-rl;
+			}
+			#lr {
+				writing-mode: sideways-lr;
+			}
+		</style>
+		<title>Kiwi Browser is broken!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<h1>Kiwi Browser is broken!</h1>
+		<p>This page demonstrates how broken Kiwi Browser is. Kiwi Browser was discontinued in January 2025, at version 132.0.6961.0. Kiwi's major version numbers match those of Chromium.</p>
+		<p>However, it turns out that Kiwi Browser lacks many features introduced in Chromium versions 117 through 132. This means it's been outdated since September 2023!</p>
+		<p>Kiwi 137.0.7337.0 was released on 7 April 2025, despite the latest stable Chrome version still being 135.0.7049.38. I therefore plan to include features from Chromium versions 133 through 137 on this page too.</p>
+		<p>Unless otherwise specified, features explicitly demonstrated on this page are not supported by Kiwi (even 137).</p>
+		<h2>2023</h2>
+			<h3>Chromium 117 (September 2023)</h3>
+				<h4>transition-behavior<span class="label label-css">CSS</span></h4>
+					<div popover id="transition">This popover should slowly fade when hidden.</div>
+					<button popovertarget="transition">Show/hide popover</button>
+			<h3>Chromium 119 (November 2023)</h3>
+				<h4>Relative colour syntax<span class="label label-css">CSS</span></h4>
+					<div id="relative">This div should be yellow.</div>
+				<h4>clip-path &lt;geometry-box&gt;<span class="label label-css">CSS</span></h4>
+					<h5>margin-box</h5>
+						<div class="geometry" id="margin">This div should have rounded corners.</div>
+			<h3>Chromium 120 (December 2023)</h3>
+				<h4>CSS nesting element tag names without &<span class="label label-css">CSS</span></h4>
+					<div><span>This span should be purple.</span></div>
+		<h2>2024</h2>
+			<h3>Chromium 125 (May 2024)</h3>
+				<h4>CSS anchor positioning<span class="label label-css">CSS</span></h4>
+					<h5>anchor() function</h5>
+						<div id="anchor">Anchor</div>
+						<div id="anchored">The left of this div should be at the right of the anchor.</div>
+						<br>
+		<h2>2025</h2>
+			<h3>Chromium 132 (January 2025)</h3>
+				<h4>writing-mode sideways values<span class="label label-css">CSS</span></h4>
+					<p>Note: These are marked as valid in Kiwi. But they don't behave correctly.</p>
+					<h5>sideways-rl</h5>
+						<div id="rl">This text should be top-to-bottom.</div>
+					<h5>sideways-lr</h5>
+						<div id="lr">This text should be bottom-to-top.</div>
+	</body>
+</html>
