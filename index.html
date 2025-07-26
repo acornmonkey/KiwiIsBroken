@@ -1,67 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<style>
-			body {
-				background-color: #aef;
-				font-family: sans-serif;
-			}
-			.label {
-				color: white;
-				margin-left: 4px;
-				font-size: 0.7em;
-				border-radius: 4px;
-			}
-			.label-css {
-				background-color: #3ac;
-			}
-			.label-html {
-				background-color: #c83;
-			}
-			div {
-				border-style: solid;
-				border-width: thin;
-				width: 300px;
-				span {
-					background-color: #d4f;
-				}
-			}
-			#transition:popover-open {
-				opacity: 1;
-			}
-			#transition {
-				opacity: 0;
-				transition: all 2s allow-discrete;
-			}
-			#relative {
-				background-color: rgb(from red r 255 b);
-			}
-			.geometry {
-				background-color: lime;
-				width: 90px;
-			}
-			#margin {
-				clip-path: circle(40%) margin-box;
-				margin: 20px;
-			}
-			#anchor {
-				anchor-name: --anc;
-			}
-			#anchored {
-				position: absolute;
-				position-anchor: --anc;
-				left: anchor(right);
-			}
-			#rl {
-				writing-mode: sideways-rl;
-			}
-			#lr {
-				writing-mode: sideways-lr;
-			}
-			#trim {
-				text-box: trim-both ex alphabetic;
-			}
-		</style>
+		<link href="styles.css" rel="stylesheet">
 		<script>
 			const popover=document.querySelector("#compopover");
 			const togBtn=document.querySelector("#togBtn");
